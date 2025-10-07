@@ -60,11 +60,11 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center space-x-4">
             <a 
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1wipXO1z0kAKyh7xgEIlzo2IRM98ub1hP/view?usp=sharing"
               download
               className="hidden md:flex items-center justify-center p-2 border border-gray-700 hover:bg-gray-800 rounded-lg transition"
             >
-              <ArrowDownTrayIcon className="h-5 w-5 text-white" />
+              <a className="h-5 w-5 text-white"> Resume </a>
             </a>
           </div>
         </nav>

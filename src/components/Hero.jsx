@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 // STEP 1: Import your photograph from the assets folder
 import profilePhoto from '../assets/profile-photo.jpg'; // Make sure your photo is here
@@ -83,14 +83,14 @@ const AnimatedHero = () => {
           </div>
 
           <div className="mt-8 flex justify-center lg:justify-start space-x-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+            <a href="https://github.com/SUKHMXN" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
               <FaGithub size={28} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+            <a href="https://www.linkedin.com/in/sukhman-singh-323231253/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
               <FaLinkedin size={28} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-              <FaTwitter size={28} />
+            <a href="https://www.instagram.com/sukhmxnnn_/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              <FaInstagram size={28} />
             </a>
           </div>
         </div>
