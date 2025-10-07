@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
+import { FaBeer } from 'react-icons/fa';
+import { AiFillFileText } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,7 +51,7 @@ const Navbar = () => {
           `}
         >
           <div className="text-2xl font-bold text-white">
-            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>&lt;Ak/&gt;</a>
+            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>&lt;&gt;</a>
           </div>
           <ul className="hidden md:flex items-center space-x-6 text-gray-200">
             <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="hover:text-white transition">About</a></li>
@@ -64,10 +66,10 @@ const Navbar = () => {
               href="https://drive.google.com/file/d/1wipXO1z0kAKyh7xgEIlzo2IRM98ub1hP/view?usp=sharing"
               target="_blank" // It's good practice to open external links in a new tab
               rel="noopener noreferrer"
-              className="hidden md:flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition"
+              className="hidden md:flex items-center gap-2 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition"
             >
               <span>Resume</span>
-              <ArrowDownTrayIcon className="h-5 w-5" />
+              <AiFillFileText className="h-5 w-5" />
             </a>
           </div>
           {/* END OF UPDATED SECTION */}
