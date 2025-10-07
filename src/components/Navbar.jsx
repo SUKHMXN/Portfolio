@@ -34,7 +34,7 @@ const Navbar = () => {
         className={`
           transition-all duration-700 ease-out w-full
           ${isScrolled
-            ? 'max-w-4xl bg-white/10 backdrop-blur-md rounded-full border border-white/20 glossy-gradient shadow-md shadow-gray-500/10'
+            ? 'max-w-4xl bg-black rounded-full border border-gray-800 shadow-md shadow-gray-500/10'
             : 'max-w-7xl bg-transparent border-transparent'
           }
         `}
@@ -49,24 +49,28 @@ const Navbar = () => {
           `}
         >
           <div className="text-2xl font-bold text-white">
-            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>&lt;&gt;</a>
+            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>&lt;Ak/&gt;</a>
           </div>
-          <ul className="hidden md:flex items-center space-x-6 text-white">
-            <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="hover:text-gray-300 transition">About</a></li>
-            <li><a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="hover:text-gray-300 transition">Skills</a></li>
-            <li><a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="hover:text-gray-300 transition">Projects</a></li>
-            <li><a href="#education" onClick={(e) => handleNavClick(e, 'education')} className="hover:text-gray-300 transition">Education</a></li>
-            <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="hover:text-gray-300 transition">Contact</a></li>
+          <ul className="hidden md:flex items-center space-x-6 text-gray-200">
+            <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="hover:text-white transition">About</a></li>
+            <li><a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="hover:text-white transition">Skills</a></li>
+            <li><a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="hover:text-white transition">Projects</a></li>
+            <li><a href="#education" onClick={(e) => handleNavClick(e, 'education')} className="hover:text-white transition">Education</a></li>
+            <li><a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="hover:text-white transition">Contact</a></li>
           </ul>
+          {/* UPDATED RESUME BUTTON */}
           <div className="flex items-center space-x-4">
             <a 
               href="https://drive.google.com/file/d/1wipXO1z0kAKyh7xgEIlzo2IRM98ub1hP/view?usp=sharing"
-              download
-              className="hidden md:flex items-center justify-center p-2 border border-gray-700 hover:bg-gray-800 rounded-lg transition"
+              target="_blank" // It's good practice to open external links in a new tab
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition"
             >
-              <a className="h-5 w-5 text-white"> Resume </a>
+              <span>Resume</span>
+              <ArrowDownTrayIcon className="h-5 w-5" />
             </a>
           </div>
+          {/* END OF UPDATED SECTION */}
         </nav>
       </header>
     </div>
@@ -74,3 +78,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
